@@ -1,0 +1,43 @@
+.header__left{
+    display: flex;
+    align-items: center;
+    @include styleText($color-black-light,$fs-1,$fw-normal)
+    .navbar-brand{
+        img{
+            width:110px;
+        }
+    }
+    // flex-grow
+    .header__form{
+        flex-grow:1;
+    }
+}
+
+
+
+.header__right{
+    .nav-link{
+        @include styleText($color-black-light,$fs-1,$fw-normal);
+    }
+}
+// RESPONSIVE 
+@include responsive("extra-large"){
+    .header__right{
+        .ude-business,.ude-teach{
+            display: none;
+        }
+    }
+}
+@include responsive("medium"){
+    .header__left{
+        .header__form,.header__cate{
+            display: none;
+        }
+    }
+    .header__right{
+        .ude-btnGroup{
+            display: none;
+        }
+        
+    }
+}

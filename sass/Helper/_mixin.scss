@@ -1,0 +1,33 @@
+// them style các loại chữ trong các udemy
+@mixin styleText($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin styleButton($bg-color, $boder-color, $pd-y, $pd-x, $radius) {
+  background-color: $bg-color;
+  border: 1px solid $boder-color;
+  padding: $pd-y $pd-x;
+  border-radius: $radius;
+}
+@mixin styleButtonHover($bg-color, $color, $bd-color) {
+  background-color: $bg-color;
+  color: $color;
+  border-color: $bd-color;
+}
+@mixin responsive($screen) {
+// lay gia tri dua vao ten man hinh
+// kiem tra gia tri ten man hinh  co hop le ko => kiem tra ten co con tai trong bien $breakpoints
+    @if (map-has-key($map: $breakpoints , $key: $screen)) {
+        // Hop le 
+        // value chua kik thuoc man hinh lay duoc
+        $value:map-get($map: $breakpoints , $key: $screen );
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else{
+        @warn " Man hinh khong ton tai";
+    }
+}

@@ -1,0 +1,45 @@
+.students {
+    margin-top: $mg-2;
+    .students_content {
+        width: 80%;
+        margin: auto;
+        .owl-prev{
+            left: -2% !important;
+        }
+        .owl-next {
+            left: unset;
+            right: -2% !important;
+        }
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-bold);
+        }
+        .card-text {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+        .raiting {
+            display: flex;
+            .raiting-star {
+                @include styleText($color-yellow, $fs-1, $fw-normal);
+                margin-right: $mg-0;
+            }
+
+            span:last-child {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+            }
+            span {
+                @include styleText($color-gray-4, $fs-1, $fw-bold);
+                margin-right: $mg-0;
+            }
+        }
+        .price {
+            text-align: right;
+            .old-price {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                text-decoration: line-through;
+            }
+            .new-price {
+                @include styleText($color-black-0, $fs-0, $fw-bold);
+            }
+        }
+    }
+}
