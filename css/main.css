@@ -14,7 +14,7 @@ html, body {
 
 .owl-prev, .owl-next {
   position: absolute;
-  top: 43%;
+  top: 35%;
   left: -3%;
   width: 45px;
   height: 45px;
@@ -39,6 +39,22 @@ html, body {
 .owl-next {
   left: unset;
   right: -3%;
+}
+
+.ude-btnWhite {
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 11px 12px;
+  border-radius: 2px;
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ude-btnWhite:hover {
+  background-color: #fff;
+  color: #29303b;
+  border-color: #29303b;
 }
 
 .ude-btnRed {
@@ -320,11 +336,13 @@ html, body {
 
 .students .students_content .owl-prev {
   left: -2% !important;
+  top: 43% !important;
 }
 
 .students .students_content .owl-next {
   left: unset;
   right: -2% !important;
+  top: 43% !important;
 }
 
 .students .students_content .card-title {
@@ -493,7 +511,7 @@ html, body {
 }
 
 .topCategories_content {
-  width: 60%;
+  width: 75%;
   margin: auto;
 }
 
@@ -533,5 +551,127 @@ html, body {
   font-size: 15px;
   font-weight: normal;
   margin-top: 5px;
+}
+
+.feedback {
+  background-color: rgba(20, 23, 28, 0.05);
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+
+.feedback .feedback_content {
+  width: 75%;
+  margin: auto;
+}
+
+.feedback .feedback_content h2 {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.feedback .feedback_content .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.feedback .feedback_content .card-content .card-image {
+  margin-left: 25px;
+  padding-right: 20px;
+}
+
+.feedback .feedback_content .card-content .card-image img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.feedback .feedback_content .card-content .image-text {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #686f7a;
+  margin-left: 25px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.feedback .feedback_content .card-content .image-text span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback .feedback_content .card-content .card-title {
+  margin-top: 25px;
+}
+
+.feedback .feedback_content .card-content .card-title h3 {
+  color: #686f7a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feedback .feedback_content .card-body p {
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.feedback .feedback_content .owl-prev {
+  left: -2% !important;
+  top: 43% !important;
+}
+
+.feedback .feedback_content .owl-next {
+  left: unset;
+  right: -2% !important;
+  top: 43% !important;
+}
+
+.companies {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.companies .companies_content {
+  width: 75%;
+  margin: auto;
+}
+
+.companies .companies_content .companies_logo p {
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.companies .companies_content .companies_logo .logo-item {
+  text-align: center;
+}
+
+.companies .companies_content .companies_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.companies .companies_content .companies_heading .heading_list {
+  width: 50%;
+}
+
+.companies .companies_content .companies_heading .heading_list .heading-item {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

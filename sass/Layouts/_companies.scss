@@ -1,0 +1,28 @@
+.companies{
+    background-color: $color-gray-1;
+    .companies_content{
+        width: 75%;
+        margin: auto;
+        .companies_logo{
+            p{
+                @include styleText($color-gray-4,$fs-0,$fw-normal);
+                text-align: center;
+            }
+            .logo-item{
+                text-align: center;
+            }
+        }
+        .companies_heading{
+            display: flex;
+            .heading_list{
+                width: 50%;
+                .heading-item{
+                    max-width: 400px;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+}

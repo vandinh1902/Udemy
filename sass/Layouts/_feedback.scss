@@ -1,0 +1,65 @@
+.feedback {
+    background-color: $color-gray-1;
+    margin-top: $mg-2;
+    padding-bottom: $pd-2;
+    .feedback_content {
+        width: 75%;
+        margin: auto;
+        h2 {
+            @include styleText($color-black-0, $fs-3, $fw-bold);
+            padding-top: 30px;
+            padding-bottom: $pd-1;
+        }
+        .card-content {
+            display: flex;
+            margin-top: $mg-2;
+            .card-image {
+                margin-left: $mg-2;
+                padding-right: $pd-2;
+                img {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                }
+            }
+            .image-text {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: $color-gray-4;
+                margin-left: $mg-2;
+                margin-right: $mg-2 - 5;
+                position: relative;
+                span {
+                    @include styleText($color-white-0, $fs-2, $fw-bold);
+                    position: absolute;
+                    top: 15px;
+                    left: 25px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card-title {
+                margin-top: $mg-2;
+                h3 {
+                    @include styleText($color-gray-4, $fs-2, $fw-bold);
+                }
+            }
+        }
+        .card-body{
+            p{
+                @include styleText($color-gray-4,$fs-2 - 5,$fw-normal);
+                margin-bottom: $mg-2;
+            }
+        }
+        .owl-prev{
+            left: -2% !important;
+            top: 43% !important;
+        }
+        .owl-next{
+            left: unset;
+            right: -2% !important;
+            top: 43% !important;
+        }
+    }
+}

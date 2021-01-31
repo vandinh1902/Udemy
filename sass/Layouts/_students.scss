@@ -5,10 +5,12 @@
         margin: auto;
         .owl-prev{
             left: -2% !important;
+            top: 43% !important;
         }
         .owl-next {
             left: unset;
             right: -2% !important;
+            top: 43% !important;
         }
         .card-title {
             @include styleText($color-black-0, $fs-0, $fw-bold);
