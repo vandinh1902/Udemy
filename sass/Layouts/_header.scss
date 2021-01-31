@@ -1,7 +1,7 @@
 .header__left{
     display: flex;
     align-items: center;
-    @include styleText($color-black-light,$fs-1,$fw-normal)
+    @include styleText($color-black-light,$fs-1,$fw-normal);
     .navbar-brand{
         img{
             width:110px;
