@@ -786,7 +786,7 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 32px;
+  padding-top: 22px;
   padding-bottom: 32px;
 }
 
