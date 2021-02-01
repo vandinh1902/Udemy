@@ -489,16 +489,18 @@ html, body {
 }
 
 .services .services_content {
-  width: 60%;
+  max-width: 1200px;
   margin: auto;
   padding: 10px;
 }
 
 .services .services_content .icon-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #F7F8FA;
   border: 1px solid #cacbcc;
   padding: 20px;
-  text-align: center;
 }
 
 .services .services_content .icon-content .icon {
@@ -528,6 +530,13 @@ html, body {
 @media screen and (max-width: 1200px) {
   .services_content {
     width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .icon-content {
+    display: block !important;
+    text-align: center;
   }
 }
 
