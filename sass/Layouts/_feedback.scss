@@ -63,3 +63,13 @@
         }
     }
 }
+
+
+// reponsive
+@include responsive("medium"){
+    .feedback_content{
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: -15px;
+    }
+}

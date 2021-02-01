@@ -22,9 +22,22 @@
             margin-right: $mg-1;
         }
         .icon-text{
-            @include styleText($color-black-0,$fs-0,$fw-normal);
+            @include styleText($color-gray-4,$fs-0,$fw-normal);
             margin-top: 5px;
         }
     }
 }
 
+@include responsive("large"){
+    .topCategories_content{
+        width: 85% !important;
+    }
+}
+
+@include responsive("medium"){
+    .topCategories_content{
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -67,3 +67,10 @@
         }
     }
 }
+
+
+@include responsive("medium"){
+    .courses-intro{
+        padding-top: 0 !important;
+    }
+}

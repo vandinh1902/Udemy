@@ -1,28 +1,60 @@
-.companies{
+.companies {
     background-color: $color-gray-1;
-    .companies_content{
+    .companies_content {
         width: 75%;
         margin: auto;
-        .companies_logo{
-            p{
-                @include styleText($color-gray-4,$fs-0,$fw-normal);
-                text-align: center;
-            }
-            .logo-item{
-                text-align: center;
-            }
-        }
-        .companies_heading{
-            display: flex;
-            .heading_list{
-                width: 50%;
-                .heading-item{
-                    max-width: 400px;
-                    margin: auto;
-                    text-align: center;
-                }
-            }
+        .companies_logo {
             
+            .logo_list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                // width: 300px;
+            }
+            p {
+                @include styleText($color-gray-4, $fs-0, $fw-normal);
+                text-align: center;
+            }
+            .logo-item {
+                margin: 0 32px 8px;
+            }
         }
     }
+    .companies_heading {
+        display: flex;
+        .heading_list {
+            width: 50%;
+            .heading-item {
+                max-width: 400px;
+                margin: auto;
+                text-align: center;
+                padding: $pd-2;
+                a {
+                    @include styleText($color-black-light, $fs-2, $fw-bold);
+                    text-decoration: none;
+                }
+                .heading-content {
+                    @include styleText($color-black-0, $fs-2 - 5, $fw-normal);
+                    padding-bottom: $pd-1;
+                }
+            }
+        }
+        .heading_list:first-of-type {
+            border-bottom: none;
+            border-right: 1px solid #dedfe0;
+        }
+    }
+}
+
+
+
+
+
+// reponsive
+@include responsive("small"){
+            .logo-item {
+                margin: 8px 16px !important;
+            }
 }

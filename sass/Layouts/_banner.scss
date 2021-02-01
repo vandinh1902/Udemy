@@ -52,3 +52,14 @@
         }
     }
 }
+
+
+
+@include responsive("large"){
+    .banner_content{
+        justify-content: center;
+    }
+  .icon_banner{
+      display: none !important;
+  }  
+}

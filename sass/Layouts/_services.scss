@@ -1,5 +1,5 @@
 .services{
-    background-color: $color-gray-2;
+    background-color: $color-gray-1;
     padding: $pd-2;
     margin-top: $mg-2;
     .services_content{
@@ -7,10 +7,11 @@
         margin: auto;
         padding: $pd-1;
         .icon-content{
-            display: flex;
+            // display: flex;
             background: $color-gray-5;
             border: 1px solid $color-gray-3;
             padding: $pd-2;
+            text-align: center;
             .icon{
                 @include styleText($color-blue,$fs-4,$fw-normal);
                 margin-right: $mg-1;
@@ -26,4 +27,21 @@
             }
         }
     }
+    .owl-prev,.owl-next{
+        display: none !important;
+    }
 }
+
+@include responsive("extra-large"){
+    .services_content{
+        width: 80% !important;
+    }
+}
+@include responsive("medium"){
+    .services_content{
+        width: 100% !important;
+    }
+}
+
+
+
